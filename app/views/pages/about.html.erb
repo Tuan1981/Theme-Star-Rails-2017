@@ -1,0 +1,64 @@
+<h3 class="valign-wrapper">About</h3>
+
+
+<div class="card z-depth-3">
+  <div class="card-content white-text">
+      <div class="row">
+        <div class="col m6">
+            <div class="card-panel grey lighten-5 z-depth-1">
+           <a class="twitter-timeline"  href="https://twitter.com/Nail21buckingha" data-widget-id="633944234303844353">Tweets by @Nail21buckingha</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+            </div>
+        </div>    
+      <div class="col m6">
+          <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="row valign-wrapper">
+                 <div class="col m3">
+                  <%= image_tag "avatar.jpg", class: "circle responsive-img" %> 
+                 </div>
+                 <div class="col m9">
+                     <span class="black-text">
+                         <h5>I dont know anything to say. Let the world tell you more...!</h5>
+                         
+                         Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                  </div>
+              </div>
+          </div>
+        </div>
+
+     <div class="col m12">
+        <div class="card-panel grey lighten-5 z-depth-1">
+              <div id="map"></div>
+          </div>
+      </div>
+          
+
+    </div>
+</div>
+      
+ <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+
+</style>
+    
+    <script>
+      function initMap() {
+        var uluru = {lat: -0.1493043, lng: 51.5118249};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+      
+     <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuBeBGXGdXpH5Zwnz7yCm2IZLVsEYx7qE&callback=initMap">
+    </script>  
